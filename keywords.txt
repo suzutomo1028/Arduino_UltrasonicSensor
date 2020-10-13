@@ -1,0 +1,20 @@
+######################################
+# Syntax Coloring Map
+# for Arduino_UltrasonicSensor
+######################################
+
+######################################
+# Datatypes and Class (KEYWORD1)
+######################################
+
+UltrasonicSensor  KEYWORD1
+
+######################################
+# Methods and Functions (KEYWORD2)
+######################################
+
+measureDistance   KEYWORD2
+
+######################################
+# Constants (LITERAL1)
+######################################
