@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arduino_UltrasonicSensor: src/UltrasonicSensor.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Arduino_UltrasonicSensor
+   &#160;<span id="projectnumber">Version 0.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a>  </div>
+  <div class="headertitle">
+<div class="title">UltrasonicSensor.cpp ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Arduino向けの超音波センサ制御ライブラリ  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_ultrasonic_sensor_8h_source.html">UltrasonicSensor.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+UltrasonicSensor.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_ultrasonic_sensor_8cpp__incl.png" border="0" usemap="#asrc_2_ultrasonic_sensor_8cpp" alt=""/></div>
+<map name="src_2_ultrasonic_sensor_8cpp" id="asrc_2_ultrasonic_sensor_8cpp">
+<area shape="rect" title="Arduino向けの超音波センサ制御ライブラリ" alt="" coords="5,5,173,32"/>
+<area shape="rect" href="_ultrasonic_sensor_8h.html" title="Arduino向けの超音波センサ制御ライブラリ" alt="" coords="23,80,155,107"/>
+<area shape="rect" title=" " alt="" coords="51,155,128,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:aa882328bca54a0c7249a313d7d1f7d29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ultrasonic_sensor_8cpp.html#aa882328bca54a0c7249a313d7d1f7d29">RECV_TIMEOUT</a>&#160;&#160;&#160;30000</td></tr>
+<tr class="separator:aa882328bca54a0c7249a313d7d1f7d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73d78f8ad1955fc7efc65b109987632"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ultrasonic_sensor_8cpp.html#ae73d78f8ad1955fc7efc65b109987632">SOUND_SPEED</a>&#160;&#160;&#160;0.034</td></tr>
+<tr class="separator:ae73d78f8ad1955fc7efc65b109987632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Arduino向けの超音波センサ制御ライブラリ </p>
+<dl class="section author"><dt>著者</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'suz'+'ut'+'omo'+'10'+'28@'+'gm'+'ail'+'.c'+'om'; return false;">suzut<span style="display: none;">.nosp@m.</span>omo1<span style="display: none;">.nosp@m.</span>028@g<span style="display: none;">.nosp@m.</span>mail<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
+<dl class="section date"><dt>日付</dt><dd>2020-10-13 新規作成 </dd></dl>
+</div><h2 class="groupheader">マクロ定義詳解</h2>
+<a id="aa882328bca54a0c7249a313d7d1f7d29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa882328bca54a0c7249a313d7d1f7d29">&#9670;&nbsp;</a></span>RECV_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RECV_TIMEOUT&#160;&#160;&#160;30000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>受信タイムアウト = 30,000(us) </p>
+
+</div>
+</div>
+<a id="ae73d78f8ad1955fc7efc65b109987632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae73d78f8ad1955fc7efc65b109987632">&#9670;&nbsp;</a></span>SOUND_SPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOUND_SPEED&#160;&#160;&#160;0.034</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>音速 = 340(m/s) = 0.034(cm/us) </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>
